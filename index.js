@@ -117,7 +117,7 @@ var getMarathonEhv = function() {
 	var gpxFolderName 	= 'marathonEHV';
 	var gpxFileName		= '42k-marathon-2015.gpx';
 	var gpxFolderLocalPath = __dirname+'/../../data/gpx/'+gpxFolderName;
-	var gpxFile = fs.readFileSync(gpxFolderLocalPath+gpxFileName);
+	var gpxFile = fs.readFileSync(gpxFolderLocalPath+'/'+gpxFileName);
 	return gpxFile;
 };
 
