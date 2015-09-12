@@ -112,7 +112,7 @@ module.exports = {
 
 
 var getMarathonEhv = function() {
-	gpxFolderName 	= 'marathonEHV';
+	var gpxFolderName 	= 'marathonEHV';
 	var gpxFileName		= '42k-marathon-2015.gpx';
 	var gpxFolderLocalPath = __dirname+'/gpx/'+gpxFolderName;
 	var gpxFile = fs.readFileSync(gpxFolderLocalPath+gpxFileName);
