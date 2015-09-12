@@ -97,6 +97,8 @@ module.exports = {
 			return;
 		}
 		
+		callback('File not found');
+		
 		
 	},
 
@@ -114,7 +116,7 @@ module.exports = {
 var getMarathonEhv = function() {
 	var gpxFolderName 	= 'marathonEHV';
 	var gpxFileName		= '42k-marathon-2015.gpx';
-	var gpxFolderLocalPath = __dirname+'/gpx/'+gpxFolderName;
+	var gpxFolderLocalPath = __dirname+'../../data/gpx/'+gpxFolderName;
 	var gpxFile = fs.readFileSync(gpxFolderLocalPath+gpxFileName);
 	return gpxFile;
 };
